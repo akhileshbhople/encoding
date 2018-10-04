@@ -11,6 +11,14 @@ node_js:
   - 5
 env:
   - CXX=g++-4.8
+matrix:
+  exclude:
+  - os: linux-ppc64le
+    node_js: "0.10"
+  - os: linux-ppc64le
+    node_js: 0.12
+  - os: linux-ppc64le
+    node_js: iojs
 addons:
   apt:
     sources:
